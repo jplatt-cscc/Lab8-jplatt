@@ -1,0 +1,8 @@
+Chapter 12:
+	#1.  Took a while to actually find the fall() function.  Seeing mostly 311 to 312 pixels per second instead of 310.  Should be about 10 pixels per animation frame while falling (312 / 30).
+
+	#2.  The velocity is much faster at the end of a fall; recorded 392, 411, 463, and 543 pixels per second depending on the fall height.
+
+	#3.  Changed gravity to pi, and the falling velocity is much slower.  Initial velocity is 99.9, pixel per animation are 3.3, and the ending fall velocities I've recorded are 186, 196, 206, 218, and 325 (didn't do proper testing for these like the last set so they don't line up to the same fall heights).
+
+	#4.  Just used setTimeRate() in the same spots I put the console.logs to slow down while falling, and resume speed when the fall ends.  Although I did initially put the slow down setTimeRate() in the wrong spot, it worked but the player became invisible and regular speed never return.
